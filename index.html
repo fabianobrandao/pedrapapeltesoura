@@ -2,34 +2,37 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Projeto X</title>
+	<title>Pedra, Papel ou Tesoura</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700|Oswald:400,700' rel='stylesheet' type='text/css'>-->
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div id="wrapper">
-		<header>
-			<a href="#" id="logo"><h1>Projeto X</h1></a>
-			<nav>
-				<ul class="menu">
-					<li><a href="#"></a>Home</li>
-					<li><a href="#"></a>About</li>
-					<li><a href="#"></a>Contact Us</li>
-				</ul>
-			</nav>
+		<header class="header">
+			<h1 class="logo"><a href="#">Pedra Papel ou Tesoura</a></h1>
+			<p>Duvido se você ganha do nosso computador nesse jogo.</p>
 		</header>
 		<section class="content">
-			<h2>Pedra, papel ou tesoura?</h2>
-			<p>E aí, topa o desafio?</p>
+			<p>Escolha uma das opções abaixo e boa sorte!</p>
+			<ul class="options">
+				<li><img src="#" alt="Pedra" id="pedra"></li>
+				<li><img src="#" alt="Papel" id="papel"></li>
+				<li><img src="#" alt="Tesoura" id="tesoura"></li>
+			</ul>
+			<div class="dashboard">
+				<div class="jogadores">
+					<img src="#" alt="Você" id="jogador">
+					<h2>Você</h2>
+					<img src="#" alt="PC" id="pc">
+					<h2>PC</h2>
+				</div><!--End of jogadores-->
+				<div class="status"></div>
+				<div class="placar">
+					<h3>Placar</h3>
+				</div>
+			</div><!--End of dashoboard-->
 		</section>
-		<select id="choice">
-    		<option value="-1">-- Select --</option>
-    		<option value="0">Rock</option>
-    		<option value="1">Paper</option>
-    		<option value="2">Scissors</option>
-		</select>
-		<span id="message"></span>
 		
 	</div><!--End of wrapper-->
 	<script type="text/javascript" src="js/script.js"></script>
