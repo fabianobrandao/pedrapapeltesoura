@@ -1,13 +1,28 @@
 /*
-
+1.Guardar as opções na variável "choices".
+2.Guardar as combinações das opções na variável "matches".
+3.Referenciar a classe "player-options";
+4.
 */
 
 (function(){
     var choices = {Rock: 0, Paper: 1, Scissors: 2},
         matches = {Rock: "Scissors", Paper: "Rock", Scissors: "Paper"},
-        playerOptions = document.getElementByClassName("player-options");
+        playerOptions = document.getElementsByClassName("player-options"),
+        pcOptions = document.getElementsByClassName("pc-options");
 
-        play
+        //Função pega a opção do jogador e mostra na tela
+        function chooseOption(evt){ 
+            evt.preventDefault(); //Ele não executa o evento padrão do html
+            choosed = document.getElementById("player-choice"); //Pega o elemento onde será mostrado a opção esocolhida pelo jogador
+            choosed.src = evt.target.src; //Troca o source do recipiente pelo source do elemento escolhido pelo jogador.
+            
+
+        }
+        //Adicionando o evento chooseOptions a cada target.
+        for (var i = 0; i < playerOptions.length; i++) {
+            playerOptions[i].addEventListener("click", chooseOption);
+        };
 
 })();
 
