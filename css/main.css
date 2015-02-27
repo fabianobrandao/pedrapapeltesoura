@@ -1,7 +1,6 @@
 /* -----------------------------------*/
 /* ---------->>> GLOBAL <<<-----------*/
 /* -----------------------------------*/
-
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700|Oswald:400,700);
 
 
@@ -14,50 +13,92 @@ body {
 #wrapper {
 	margin: 0 auto;
 	width: 960px;
-	background-color: #ccc;
+	background-color: #ccc; /*cor cinza claro*/
+	text-align: center;
 }
 
-header {
-	background: #dfdfdf;
-}
 
-h1 {
-	margin-top: 0;
-}
+a { text-decoration: none; }
 
-p {
-	font-family: 'Droid Serif', 'Times New Roman', serif;
-}
+a:visited { color: #ff0403;}
+
 /* -----------------------------------*/
 /* ---------->>> HEADER <<<-----------*/
 /* -----------------------------------*/
-.menu {
-	float: right;
-}
-
-.menu li {
-	display: inline-block;
-	margin: 0 20px 30px 0;
-	padding-right: 10px;
+.header {
+	background: url(../img/rock-paper-scissors-bg.png) no-repeat center center;
+	background-size: cover;
+	height: 300px;
 }
 
 /* -----------------------------------*/
 /* ---------->>> STRUCTURE <<<-----------*/
 /* -----------------------------------*/
 
+.player-options, .pc-options {
+	list-style: none;
+}
+
+.player-options li {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+/*.pc-options {
+	float: right;
+}*/
+
+.pc-options li {
+	display: inline-block;
+	padding-right: 5px;
+}
+
+/*.pc-options li: nth-child(2) {
+	display: none;
+}*/
+
+.pc-options .selected {
+	border: 5px solid orange;
+}
+
 
 /* -----------------------------------*/
 /* ---------->>> HEADING <<<-----------*/
 /* -----------------------------------*/
 
+h1 {
+	margin-top: 0;
+}
 
 /* -----------------------------------*/
 /* ---------->>> TEXT STYLES <<<-----------*/
 /* -----------------------------------*/
 
+h1, h2, h3 {
+	font-family: 'Oswald', Arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+}
+
+p {
+	font-family: 'Droid Serif', 'Times New Roman', serif;
+}
 
 /* -----------------------------------*/
-/* ---------->>> NAVIGATION <<<-----------*/
+/* ---------->>> FOOTER <<<-----------*/
 /* -----------------------------------*/
+
+.footer {
+	background-color: #28b3e5; /*cor azul anil, a mesma do bg do header*/
+	height: 100px;
+}
+
+.footer p {
+	padding-top: 50px;
+}
+
+
+
 
 

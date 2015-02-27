@@ -10,30 +10,38 @@
 <body>
 	<div id="wrapper">
 		<header class="header">
-			<h1 class="logo"><a href="#">Pedra Papel ou Tesoura</a></h1>
+			<h1 class="logo"><a href="#">Pedra, Papel ou Tesoura</a></h1>
 			<p>Duvido se você ganha do nosso computador nesse jogo.</p>
 		</header>
 		<section class="content">
 			<p>Escolha uma das opções abaixo e boa sorte!</p>
-			<ul class="options">
-				<li><img src="#" alt="Pedra" class="pedra"></li>
-				<li><img src="#" alt="Papel" class="papel"></li>
-				<li><img src="#" alt="Tesoura" class="tesoura"></li>
-			</ul>
+			<ul class="player-options">
+				<li><a href="#"><img src="img/pedra-player.png" alt="Pedra" class="pedra selected"></a></li>
+				<li><a href="#"><img src="img/papel-player.png" alt="Papel" class="papel"></a></li>
+				<li><a href="#"><img src="img/tesoura-player.png" alt="Tesoura" class="tesoura"></a></li>
+			</ul>			
 			<div class="dashboard">
-				<div class="jogadores">
-					<img src="#" alt="Você" id="jogador">
+				<div class="players-choices">
+					<img src="img/player-guesswhat.png" alt="Player" id="player-choice">
 					<h2>Você</h2>
-					<img src="#" alt="PC" id="pc">
+					<span class="">vs</span>
+					<ul class="pc-options">
+						<li><img src="img/pedra-pc.png" alt="Pedra" class="pedra"></li>
+						<li><img src="img/papel-pc.png" alt="Papel" class="papel"></li>
+						<li><img src="img/tesoura-pc.png" alt="Tesoura" class="tesoura"></li>
+					</ul>
 					<h2>PC</h2>
-				</div><!--End of jogadores-->
-				<div class="status"></div>
-				<div class="placar">
+				</div><!--End of player-choices-->
+				<div class="status"></div><!--End of status-->
+				<div class="score">
 					<h3>Placar</h3>
-				</div>
+				</div><!--End of score-->
 			</div><!--End of dashoboard-->
+			<button class="play-again">Jogar Novamente</button>
 		</section>
-		
+		<footer class="footer">
+			<p>Fabiano Brandão - Todos os direitos explorados</p>
+		</footer>		
 	</div><!--End of wrapper-->
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
