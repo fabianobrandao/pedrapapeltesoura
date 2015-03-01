@@ -11,17 +11,31 @@
         playerOptions = document.getElementsByClassName("player-options"),
         pcOptions = document.getElementsByClassName("pc-options");
 
-        //Função pega a opção do jogador e mostra na tela
+        //Função pega a opção escolhida pelo jogador e a mostra na tela
         function chooseOption(evt){ 
-            evt.preventDefault(); //Ele não executa o evento padrão do html
-            choosed = document.getElementById("player-choice"); //Pega o elemento onde será mostrado a opção esocolhida pelo jogador
-            choosed.src = evt.target.src; //Troca o source do recipiente pelo source do elemento escolhido pelo jogador.
-            
+            evt.preventDefault(); //Método usado para não executar o evento padrão do html
+            PlayerChoosed = document.getElementById("player-choice"); //Pega o elemento onde será mostrado a opção esocolhida pelo jogador
+            PlayerChoosed.src = evt.target.src; //Troca o source do recipiente pelo source do elemento escolhido pelo jogador.
 
         }
         //Adicionando o evento chooseOptions a cada target.
         for (var i = 0; i < playerOptions.length; i++) {
             playerOptions[i].addEventListener("click", chooseOption);
+        };
+
+        //Função gera uma escolha aleatória para o computador baseado nas opções disponíveis. Ela deve ser acionada assim que a página for carregada.
+         function pcRandom(evt){
+            evt.preventDefault(); //Método usado para não executar o evento padrão do html
+            randomChoice = document.getElementsByClassName("pc-choice"); //Referencia as opções disponíveis para o computador
+            console.log(randomChoice);
+            randomChoice[Math.floor(Math.random()*3)] = evt.target.value;
+            if(randomChoice === choices[i]) {
+                randomChoice.src = evt.target.src;
+            }
+        }
+
+        for (var i = 0; i < pcOptions.length; i++) {
+            pcOptions[i].addEventListener("click", pcRandom);
         };
 
 })();

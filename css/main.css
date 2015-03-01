@@ -48,14 +48,18 @@ a:visited { color: #ff0403;}
 	float: right;
 }*/
 
+.player-options img {
+	width: 50px;
+}
+
 .pc-options li {
 	display: inline-block;
 	padding-right: 5px;
 }
 
-/*.pc-options li: nth-child(2) {
+.pc-options li:nth-child(2) {
 	display: none;
-}*/
+}
 
 .pc-options .selected {
 	border: 5px solid orange;
